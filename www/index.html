@@ -17,7 +17,9 @@
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
-	<script src="js/ng-cordova.min.js"></script>
+	<script src="js/ng-cordova.js"></script>
+	<script src="js/PushNotification.js"></script>
+	<script src="js/Toast.js"></script>
     <script src="cordova.js"></script>
 
     <!-- your app's js -->
@@ -48,6 +50,14 @@
 			</button>  
 			<br>
             <div class="button"> <a href="#" onclick="ok()">Ok</a> </div>
+			<br>
+			<button class="button button-full button-positive" ng-click="register()">
+			Register+{{testText}}
+			</button>
+			<br>
+			{{regId}}
+
+			
       </ion-content>
     </ion-pane>
   </body>
